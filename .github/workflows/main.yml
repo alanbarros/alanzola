@@ -10,6 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@main
     - name: alanbarros/alanzola
-      uses: lanbarros/alanzola@main
+      uses: alanbarros/alanzola@main
       env:
         TOKEN: ${{ secrets.TOKEN }}
