@@ -1,115 +1,34 @@
-{% import "macros/scripts.html" as scripts %}
-{% import "macros/macros.html" as macros %}
-{% import "macros/head.html" as head %}
-{% import "macros/sidebar.html" as sidebar %}
+{% extends "base.html" %}
 
-{% set author = load_data(path="author.toml") %}
-{% set sidebar_nav = load_data(path="nav.toml") %}
+{% block pagetitle %}
+    {{ head::titlesite(page_title = section.title) }}
+{% endblock pagetitle %}
 
-<!DOCTYPE html>
-<html lang="en-us">
+{% block content %}
 
-  <head>
-    {{ scripts::analytics_script() }}
-    
-    {{ head::links() }}
-    {{ head::meta() }}
-
-    {% block pagetitle %}
-    {{ head::titlesite(page_title = "Home") }}
-    {% endblock pagetitle %}
-
-    {{ head::css() }}
-
-    {{ head::icons() }}
-
-    {{ head::rss() }}
-
-    {{ head::mathjax() }}
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-</head>
-
-  <body>
-
-    {# sidebar #}
-    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
-        styles, `#sidebar-checkbox` for behavior. -->
-    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
-
-    <!-- Toggleable sidebar -->
-    <div class="sidebar" id="sidebar">
-      {{ sidebar::personal_info(gravatar = author.gravatar, description = author.description, contacts = author.contact) }}
-
-      {% block navigation_list %}
-      {{ sidebar::nav(navlist = sidebar_nav.nav, page_permalink = config.base_url) }}
-      {% endblock navigation_list %}
-
-      {{ sidebar::copyright(author_name = author.name) }}
-      <!--<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="pt_BR" data-type="vertical" data-theme="light" data-vanity="alanpbarros">
-            <a class="LI-simple-link" href='https://br.linkedin.com/in/alanpbarros?trk=profile-badge'>
-                Alan Barros
-            </a>
-        </div>-->
-
-      {{ sidebar::powered_by() }}
-
-      {{ scripts::changing_words() }}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-4">
+      <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/10132201?s=250&u=5a47a5c761d73e9e8e19873ac19a063770caeaf1&v=4" alt="Profile Image"/>
     </div>
-    {# ### #}
-
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-
-      {% block masthead %}
-      {{ macros::masthead(current_url=config.base_url) }}
-      {% endblock masthead %}
-
-      <div class="container content">
-
-        {% block content %}
-        <div class="card">
-            <div class="card-header">
-              Sobre
-            </div>
-            <div class="card-body">
-              <blockquote class="blockquote mb-0">
-                <p>Atualmente faço parte de uma equipe de desenvolvimento auto gerenciável que 
-                    traz solução de software para a gestão ambiental e geográficas na Secretaria 
-                    de Infraestrutura e Meio Ambiente do Estado de São Paulo.<br>
-
-                    Utilizamos o serviço de integração contínua da Microsoft (Azure DevOps) 
-                    mesclado com metodologias ágeis como o Scrum para entregar nossos projetos 
-                    com maior produtividade e qualidade.<br>
-                    
-                    As tecnologias que utilizo no dia a dia são:
-                     <ul>
-                        <li>C#</li> 
-                        <li>Microsoft .NET Framework (WebForms e MVC)</li> 
-                        <li>Microsoft SQL Server (SqlGeography usado com muita frequencia)</li> 
-                        <li>API Google Maps</li> 
-                     </ul>
-                    <br>
-                    Tenho experiências anteriores na área de infraestrutura que, unidas com minhas formações técnicas e de gestão me garantem uma ótima base para enfrentar novos desafios na área de desenvolvimento. </p>
-              </blockquote>
-            </div>
+    <div class="col-8">
+      <div class="row justify-content-left">
+        <div class="col">
+          <h1>Alan Barros<br/>
+            <small class="text-muted">Software Engineer</small>
+          </h1>
         </div>
-        {% endblock content %}
-
+      </div>
+      <div class="row justify-content-right">
+        <div class="col">
+          <i class="fa fa-github"></i> <a href="http://github.com/alanbarros">alanbarros</a></br>
+          <i class="fa fa-telegram"></i> <a href="https://t.me/alanbarros">alanbarros</a></br>
+          <a href="mailto:alan.barros@outlook.com">alan.barros@outlook.com</a>
+        </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
-    {{ scripts::sidebar_script() }}
-
-
-  </body>
-
-  {{ scripts::disqus() }}
-
-</html>
+{{ section.content | safe }}
+{% endblock content %}
