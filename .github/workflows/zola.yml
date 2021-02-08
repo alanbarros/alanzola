@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Teste environment variable
-        run: echo ${GITHUB_REPOSITORY} 
+        run: echo ${PAGES_BRANCH} e ${GITHUB_REPOSITORY}
         env: 
           TOKEN: ${{ secrets.TOKEN }}
           GITHUB_REPOSITORY: "alanbarros/alanbarros.github.io"
