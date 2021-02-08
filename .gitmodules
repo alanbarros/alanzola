@@ -2,3 +2,6 @@
 [submodule "themes/hyde"]
 	path = themes/hyde
 	url = https://github.com/codeshow/hyde.git
+[submodule "themes/codinfox"]
+	path = themes/codinfox
+	url = https://github.com/svavs/codinfox-zola
