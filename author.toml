@@ -1,0 +1,23 @@
+###
+# About/contact for the site author
+#
+# name of the author of the site
+name = "Alan Barros"
+# description to display in the sidebar
+description = "A passionate <span class=\"codinfox-changing-keywords\"><b class=\"visible\">developer,</b><b class=\"hidden\">researcher,</b></span> lead by curiosity."
+
+# the profile image of the author to display in the sidebar
+gravatar = "3cea2192e242cb6976f7ede5ca48c9af" # md5 hash of your email address # sidebar.html
+
+# contact links to reach the author
+#  - `name` is the font-awesome char name
+#  - `path` is the link to follow 
+contact = [
+  { name = "linkedin", path = "https://www.linkedin.com/in/alanpbarros" },
+  { name = "github", path = "https://github.com/alanbarros" },
+  { name = "facebook", path = "https://facebook.com/alanpbarros" },
+  { name = "twitter", path = "https://twitter.com/alanpbarros" },
+  { name = "instagram", path = "https://instagram.com/alanpbarros" },
+  { name = "lastfm", path = "https://www.last.fm/user/alanpbarros" },
+  { name = "email", path = "alan.barros@outlook.com" }
+]
