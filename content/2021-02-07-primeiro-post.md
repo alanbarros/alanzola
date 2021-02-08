@@ -16,8 +16,7 @@ Basta escrever Markdown com toda a sua maravilhosidade.
 
 ## E também tem syntax-highlight
 
-```csharp
-
+```cs
 public class Program
 {
     static void Main()
@@ -25,5 +24,4 @@ public class Program
         Console.WriteLine("Hello world");
     }
 }
-
 ```
