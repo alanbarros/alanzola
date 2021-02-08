@@ -2,6 +2,11 @@ name: ZolaDeploy
 
 # Controls when the action will run. 
 on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
   workflow_dispatch:
 
 jobs:
@@ -9,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: DEV
-      url: "alanbarros.github.io/alanzola"
+      url: "https://alanbarros.github.io/alanzola"
     steps:
       - uses: actions/checkout@v2
       # Execute the Zola Deploy
@@ -25,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: PROD
-      url: "alanbarros.github.io"
+      url: "https://alanbarros.github.io"
     needs: build-dev
     steps:
       - uses: actions/checkout@v2

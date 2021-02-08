@@ -16,7 +16,14 @@ Basta escrever Markdown com toda a sua maravilhosidade.
 
 ## E também tem syntax-highlight
 
-```python
-def hello():
-    return 'World
+```csharp
+
+public class Program
+{
+    static void Main()
+    {        
+        Console.WriteLine("Hello world");
+    }
+}
+
 ```
