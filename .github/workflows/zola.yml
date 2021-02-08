@@ -26,13 +26,16 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Teste environment variable
-        run: echo ${PAGES_BRANCH} e ${GITHUB_REPOSITORY}
-        env: 
-          TOKEN: ${{ secrets.TOKEN }}
-          GITHUB_REPOSITORY: "alanbarros/alanbarros.github.io"
-          PAGES_BRANCH: teste 
+      #- name: Teste environment variable
+      #  run: echo ${PAGES_BRANCH} e ${GITHUB_REPOSITORY}
+      #  env: 
+      #    TOKEN: ${{ secrets.TOKEN }}
+      #    GITHUB_REPOSITORY: "alanbarros/alanbarros.github.io"
+      #    PAGES_BRANCH: gh-pages 
       
       # Execute the Zola Deploy
-      # - name: Zola Deploy
-      #  uses: zbrox/zola-deploy-action@0.12.2
+      - name: Zola Deploy
+        uses: zbrox/zola-deploy-action@0.12.2
+        env: 
+          TOKEN: ${{ secrets.TOKEN }}
+          PAGES_BRANCH: gh-pages 
