@@ -35,8 +35,6 @@ main() {
     git config --global url."https://github.com/".insteadOf git@github.com:
     git submodule update --init --recursive
 
-    cd ../../
-
     zola=./zola
     
     chmod +x $zola
