@@ -13,7 +13,7 @@ jobs:
     steps:
       # Execute the Zola Deploy
       - name: Zola Deploy (With local binary)
-        run: ./scripts/deploy_zola.sh
+        run: ls -la && ./scripts/deploy_zola.sh
         env: 
           TOKEN: ${{ secrets.TOKEN }}
           PAGES_BRANCH: gh-pages
