@@ -27,7 +27,7 @@ jobs:
       
       # Execute the Zola Deploy
       - name: Zola Deploy (With local binary)
-        run: ./entrypoint.sh
+        run: ls -la && pwd && ./.github/workflows/entrypoint.sh
         env: 
           TOKEN: ${{ secrets.TOKEN }}
           PAGES_BRANCH: gh-pages
