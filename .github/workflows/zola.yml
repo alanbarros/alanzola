@@ -26,8 +26,8 @@ jobs:
       - uses: actions/checkout@v2
       
       # Execute the Zola Deploy
-      - name: Zola Deploy
-        uses: zbrox/zola-deploy-action@0.12.2
+      - name: Zola Deploy (With local binary)
+        run: ./entrypoint.sh
         env: 
           TOKEN: ${{ secrets.TOKEN }}
           PAGES_BRANCH: gh-pages
