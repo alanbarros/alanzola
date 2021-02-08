@@ -11,9 +11,10 @@ jobs:
       name: DEV
       url: "alanbarros.github.io/alanzola"
     steps:
+      - uses: actions/checkout@v2
       # Execute the Zola Deploy
       - name: Zola Deploy (With local binary)
-        run: ls -la && ./scripts/deploy_zola.sh
+        run: ./scripts/deploy_zola.sh
         env: 
           TOKEN: ${{ secrets.TOKEN }}
           PAGES_BRANCH: gh-pages
@@ -27,6 +28,7 @@ jobs:
       url: "alanbarros.github.io"
     needs: build-dev
     steps:
+      - uses: actions/checkout@v2
       # Execute the Zola Deploy
       - name: Zola Deploy (With local binary)
         run: ./scripts/deploy_zola.sh
