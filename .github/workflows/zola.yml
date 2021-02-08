@@ -26,5 +26,9 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Zola Deploy
-        uses: zbrox/zola-deploy-action@0.12.2
+      - name: Teste environment variable
+        run: echo $TOKEN
+      
+      # Execute the Zola Deploy
+      # - name: Zola Deploy
+      #  uses: zbrox/zola-deploy-action@0.12.2
