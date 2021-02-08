@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v2
       # Execute the Zola Deploy
       - name: Zola Deploy (With local binary)
-        run: ./scripts/deploy_zola.sh
+        run: ./.github/scripts/deploy_zola.sh
         env: 
           TOKEN: ${{ secrets.TOKEN }}
           PAGES_BRANCH: gh-pages
@@ -36,7 +36,7 @@ jobs:
       - uses: actions/checkout@v2
       # Execute the Zola Deploy
       - name: Zola Deploy (With local binary)
-        run: ./scripts/deploy_zola.sh
+        run: ./.github/scripts/deploy_zola.sh
         env: 
           TOKEN: ${{ secrets.TOKEN }}
           PAGES_BRANCH: gh-pages
