@@ -31,4 +31,5 @@ jobs:
         env: 
           TOKEN: ${{ secrets.TOKEN }}
           PAGES_BRANCH: gh-pages
+          REPO_GITHUB_IO: "alanbarros/alanbarros.github.io"
           ZOLA_BASE_URL: https://alanbarros.github.io
