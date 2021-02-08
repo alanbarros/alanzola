@@ -27,7 +27,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Teste environment variable
-        run: echo $TOKEN
+        run: echo ${TOKEN}
+        env: 
+          TOKEN: ${{ secrets.TOKEN }}
       
       # Execute the Zola Deploy
       # - name: Zola Deploy
