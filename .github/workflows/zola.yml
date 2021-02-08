@@ -27,9 +27,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Teste environment variable
-        run: echo ${TOKEN}
+        run: echo ${GITHUB_REPOSITORY} 
         env: 
           TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_REPOSITORY: "alanbarros/alanbarros.github.io"
+          PAGES_BRANCH: teste 
       
       # Execute the Zola Deploy
       # - name: Zola Deploy
