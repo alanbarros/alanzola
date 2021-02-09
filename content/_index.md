@@ -69,8 +69,7 @@ __Anhanguera Educacional__ T.I Management
 
 ## Projects
 
-### Github 
-<!--[![Visitors](https://visitor-badge.glitch.me/badge?page_id=github/alanbarros)](https://github.com/alanbarros)-->
+### Github [![Visitors](https://visitor-badge.glitch.me/badge?page_id=github/alanbarros)](https://github.com/alanbarros)
 
 My [personal github account](https://github.com/alanbarros) hosts my hobby development projects as well as listing contributions to open source tools.
 
