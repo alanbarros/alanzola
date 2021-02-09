@@ -1,6 +1,6 @@
 ---
 layout: cv
-title: Alan Barros's CV
+title: Alan Barros' CV
 ---
 
 ## About me
