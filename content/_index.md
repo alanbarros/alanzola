@@ -3,25 +3,42 @@ layout: cv
 title: Alan Barros's CV
 ---
 
-## Currently
+## About me
 
-I'm a Software Engineer at [GwCloud](http://www.globalweb.cloud/), based in São Paulo, Brazil. Here I develop software in C# language using .Net Core 3.1.
+I'm a Software Engineer at [GwCloud](http://www.globalweb.cloud/), based in São Paulo, Brazil. Here I develop software in C# and .Net Core 3.1 (LTS), I'm more focused on back-end software, using PostgreSql, Docker, Swarm as orquestration engine, RabbitMQ as messaging broker, Masstransit nuget package as a abstraction of RabbitMQ and AutoFac as Dependency Injector.
+
+I coding following Clean Architecture and some design patter like chain of responsability, as well DDD and unit tests. 
 
 ## Employment
 
-`2015-` 
-__Illumina, Inc.__ Bioinformatics scientist (data scientist and statistical programmer)
+`2016-` 
+__GW Cloud__ Software Engineer (.Net back-end)
+
+`2014-15`
+__Quatá Investiments__ Software Developer (PHP)
+
+`2014-14`
+__Ala Services__ SysAdmin (Linux)
+
+`2013-13`
+__R2Tech Systems__ Tech Support (Windows Server)
+
+`2010-12`
+__Rosel Center Info__ Salesman/Tech Support (E-commerce)
 
 ## Education
 
-`2012-15`
-__University of Edinburgh__ Bioinformatics PhD (supervisors: Colin Semple and Stuart Aitken). My thesis was titled _Unravelling higher order chromatin organisation through statistical analysis_ and is available through the [Edinburgh Research Archive](https://www.era.lib.ed.ac.uk/handle/1842/22906).
+`2021-`
+__Anhanguera Educacional__ Software Engineering
 
-`2011-12`
-__Imperial College London__ MSc Bioinformatics and Theoretical Systems Biology (_Distinction_)
+`2017-19`
+__Senai São Paulo__ Software Development
 
-`2008-11`
-__University of York__ BSc Biology (_First class honours_)
+`2014-16`
+__Senai Suiço-Brasileiro__ Structured Networking
+
+`2012-14`
+__Anhanguera Educacional__ T.I Management
 
 ## Technical skills
 
@@ -34,6 +51,7 @@ __University of York__ BSc Biology (_First class honours_)
 * HTML and CSS
 * Javascript (incl. Typescript, React)
 * Go
+* PHP
 * Cluster computing
 * Azure Devops | Azure Pipelines | Azure Boards
 * Github | Github Actions
@@ -43,30 +61,43 @@ __University of York__ BSc Biology (_First class honours_)
 
 ## Areas of expertise
 
-* Bioinformatics
-* Statistics
-* Machine learning
-* Data visualisation
 * Software development
-* NGS and variant calling
+* GNU/Linux & Unix
+* Problem Solving
+* Windows Server
+* Azure Devops
 
 ## Projects
 
-### github
+### Github 
+<!--[![Visitors](https://visitor-badge.glitch.me/badge?page_id=github/alanbarros)](https://github.com/alanbarros)-->
 
-My [personal github account](https://github.com/blmoore) hosts my hobby development projects as well as listing contributions to open source tools. Examples include: shiny apps [blackspot](https://github.com/blmoore/blackspot) and [shinybrot](https://github.com/blmoore/shinybrot), as well as an R package hosted by CRAN ([mandelbrot](https://github.com/blmoore/mandelbrot)).
+My [personal github account](https://github.com/alanbarros) hosts my hobby development projects as well as listing contributions to open source tools.
 
-### blog
+<details>
+  <summary><i class="fa fa-bar-chart"></i> Github Stats</summary>
+  <img src="https://github-readme-stats.vercel.app/api?username=alanbarros&&show_icons=true&title_color=222222&icon_color=03A87C&text_color=333333&bg_color=ffffff">
+</details>
+<br/>
 
-I write a data science blog at [blm.io](http://blm.io/blog) where I apply R and Python to open datasets and write-up the results. My posts have been featured by sites including FiveThirtyEight, BuzzFeed, AVclub, io9 and more, and also led to being an invited blogger at the Huffington Post. My original wordpress blog ([benjaminlmoore.wordpress.com](http://benjaminlmoore.wordpress.com)) has received over 150,000 unique visitors from 180 countries.
+<details>
+  <summary><i class="fa fa-pie-chart"></i> Languages Used</summary>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alanbarros&layout=compact&bg_color=ffffff&text_color=333333">
+</details>
+
+### Blog
+
+I write a tecnology blog at [github pages](http://alanbarros.github.io/blog) where I apply C# and other languages, some samples of mine daily work.
 
 ## Links
 
 <!-- fa are fontawesome, ai are academicons -->
-* <i class="fa fa-envelope"></i> <a href="mailto:ben@blm.io">ben@blm.io</a><br />
-* <i class="fa fa-github"></i> <a href="http://github.com/blmoore">blmoore</a><br />
-* <i class="fa fa-twitter"></i> <a href="http://twitter.com/benjaminlmoore">benjaminlmoore</a><br />
-* <i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/blmoore/">LinkedIn</a>
-* <i class="fa fa-stack-overflow"></i> <a href="http://stackoverflow.com/users/1274516/blmoore">StackOverflow</a>
+* <i class="fa fa-envelope"></i> <a href="mailto:alan.barros@outlook.com">alan.barros@outlook.com</a><br />
+* <i class="fa fa-github"></i> <a href="http://github.com/alanbarros">Github</a><br />
+* <i class="fa fa-twitter"></i> <a href="http://twitter.com/alanpbarros">Twitter</a><br />
+* <i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/alanpbarros/">LinkedIn</a>
+* <i class="fa fa-stack-overflow"></i> <a href="https://pt.stackoverflow.com/users/129278/alan-barros">StackOverflow</a>
 * <i class="fa fa-lastfm"></i> <a href="https://www.last.fm/user/alanpbarros">Last.fm</a>
+
+> If you found something wrong, please tell me [here](https://github.com/alanbarros/alanzola/issues)
 

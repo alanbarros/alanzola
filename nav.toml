@@ -26,6 +26,6 @@ path = "/blog/"
 #   name = "Tags"
 #   path = "/tags/"
 
-[[nav]]
-name = "About"
-path = "/about/"
+# [[nav]]
+# name = "About"
+# path = "/about/"

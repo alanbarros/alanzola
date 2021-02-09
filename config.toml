@@ -20,8 +20,8 @@ highlight_code = true
 # Put all your custom variables here
 logo = "/img/logo.png"
 
-version = "1.0.1"
-copyrightyear = "2020"
+version = "0.1.0"
+copyrightyear = "2021"
 
 # Puglins
 mathjax = true # whether support mathjax

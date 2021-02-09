@@ -18,6 +18,6 @@ contact = [
   { name = "facebook", path = "https://facebook.com/alanpbarros" },
   { name = "twitter", path = "https://twitter.com/alanpbarros" },
   { name = "instagram", path = "https://instagram.com/alanpbarros" },
-  { name = "lastfm", path = "https://www.last.fm/user/alanpbarros" },
-  { name = "email", path = "alan.barros@outlook.com" }
+  { name = "lastfm", path = "https://www.last.fm/user/alanpbarros" }
+  #{ name = "email", path = "alan.barros@outlook.com" }
 ]
