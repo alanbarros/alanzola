@@ -5,9 +5,9 @@ title: Alan Barros' CV
 
 ## About me
 
-I'm a Software Engineer at [GwCloud](http://www.globalweb.cloud/), based in São Paulo, Brazil. Here I develop software in C# and .Net Core 3.1 (LTS), I'm more focused on back-end software, using PostgreSql, Docker, Swarm as orquestration engine, RabbitMQ as messaging broker, Masstransit nuget package as a abstraction of RabbitMQ and AutoFac as Dependency Injector.
+I'm a Software Engineer at [GwCloud](http://www.globalweb.cloud/), based in São Paulo, Brazil. Here I develop software in C# and .Net Core 3.1 (LTS), I'm more focused on back-end software, using PostgreSql, Docker, Swarm, RabbitMQ and AutoFac as Dependency Injector.
 
-I coding following Clean Architecture and some design patter like chain of responsability, as well DDD and unit tests. 
+I develop following Clean Architecture and some design patterns like chain of responsability, as well as unit tests with XUnit. 
 
 ## Employment
 
@@ -86,7 +86,7 @@ My [personal github account](https://github.com/alanbarros) hosts my hobby devel
 
 ### Blog
 
-I write a tecnology blog at [github pages](http://alanbarros.github.io/blog) where I apply C# and other languages, some samples of mine daily work.
+I write a tech blog at [github pages](http://alanbarros.github.io/blog) where I apply C# and other languages, just some samples of mine daily work.
 
 ## Links
 
