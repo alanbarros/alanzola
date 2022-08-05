@@ -5,13 +5,16 @@ title: Alan Barros' CV
 
 ## About me
 
-I'm a Software Engineer at [GwCloud](http://www.globalweb.cloud/), based in São Paulo, Brazil. Here I develop software in C# and .Net Core 3.1 (LTS), I'm more focused on back-end software, using PostgreSql, Docker, Swarm, RabbitMQ and AutoFac as Dependency Injector.
+I'm a Tech Lead at Itaú Unibanco, providing solution of software automation to the internal back office billing.
 
-I develop following Clean Architecture and some design patterns like chain of responsability, as well as unit tests with XUnit. 
+I develop following Clean Architecture and some design patterns like chain of responsibility, as well as unit tests with XUnit. 
 
 ## Employment
 
-`2016-` 
+`2016-2020` 
+__GW Cloud__ Tech Lead / Software Engineer / Architect
+
+`2016-2020` 
 __GW Cloud__ Software Engineer (.Net back-end)
 
 `2014-15`
