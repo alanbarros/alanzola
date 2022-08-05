@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alanbarros.github.io/alanzola/sitemap.xml
